@@ -1,0 +1,71 @@
+body {
+  font-family: Courier New, sans-serif;
+  font-size: 12.5px;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  background-image: url('background.png');
+  background-repeat: repeat;
+  background-size: auto;
+}
+pre {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.content {
+  white-space: pre-wrap;
+  text-align: center;
+}
+.color-orange {
+  color: orange;
+  background-color: lightgray;
+}
+.color-darkblue {
+  color: darkblue;
+  background-color: lightgray;
+}
+.color-darkgreen {
+  color: darkgreen;
+  background-color: darkgreen;
+}
+.color-blue {
+  color: blue;
+  background-color: lightgray;
+}
+.color-darkblue2 {
+  color: #000064;
+  background-color: #000064;
+}
+.color-white {
+  color: white;
+  background-color: #00000080;  
+}
+.no-color {
+  background-color: #795548;
+}
+.message {
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: darkblue;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-transform: uppercase;
+  z-index: 1000;
+}
