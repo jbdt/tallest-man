@@ -30,10 +30,12 @@ function addMoreContent() {
 }
 
 function checkScroll() {
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+  const content = document.getElementById('content');
+  const atBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
+  const contentVisible = content.getBoundingClientRect().top <= window.innerHeight;
+  if (atBottom || contentVisible) {
     addMoreContent();
   }
 }
-
 window.addEventListener('scroll', checkScroll);
 addMoreContent();
